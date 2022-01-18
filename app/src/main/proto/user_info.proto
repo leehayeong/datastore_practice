@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "com.example.datastorepractice"; // package name
+option java_multiple_files = true;
+
+message UserSettings {
+  enum BgColor {
+    COLOR_WHITE = 0;
+    COLOR_BLACK = 1;
+  }
+
+  BgColor bgColor = 1;
+}
